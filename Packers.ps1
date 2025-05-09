@@ -2,7 +2,7 @@
 # For safe and local quick-dumping of System logs and files
 #
 # Author:
-# Created by dot-sys under GPL-3.0 license
+# Created by do1-sys under GPL-3.0 license
 # This script is not related to any external Project.
 #
 # Usage:

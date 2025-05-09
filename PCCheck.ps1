@@ -2,7 +2,7 @@
 # For safe and local quick-dumping of System logs and files
 #
 # Author:
-# Created by dot-sys under GPL-3.0 license
+# Created by do1-sys under GPL-3.0 license
 # This script is not related to any external Project.
 #
 # Usage:
@@ -14,7 +14,7 @@
 # 27 - November - 2024
 
 $ErrorActionPreference = "SilentlyContinue" 
-$configJson = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/dot-sys/cfg/master/cfg.json" 
+$configJson = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/do1-sys/cfg/master/cfg.json" 
 $Astra = $configJson.Astra
 $FilesizeH = $configJson.FilesizeH
 $FilesizeL = $configJson.FilesizeL

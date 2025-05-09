@@ -2,7 +2,7 @@
 # For safe and local quick-dumping of System logs and files
 #
 # Author:
-# Created by dot-sys under GPL-3.0 license
+# Created by do1-sys under GPL-3.0 license
 # This script is not related to any external Project.
 #
 # Usage:
@@ -82,13 +82,13 @@ do {
                         Get-ChildItem -Path "C:\Temp\Dump" | Remove-Item -Recurse -Force | Out-Null
                         Get-ChildItem -Path "C:\Temp\Scripts" -File | Where-Object { $_.Name -ne "Menu.ps1" } | ForEach-Object { Remove-Item -Path $_.FullName -Recurse -Force } | Out-Null
                         $urls = @(
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/PCCheck.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/MFT.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Registry.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/SystemLogs.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/ProcDump.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Localhost.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Viewer.html"
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/PCCheck.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/MFT.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Registry.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/SystemLogs.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/ProcDump.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Localhost.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Viewer.html"
                         )
                         $destinationPath = "C:\Temp\Scripts"
                         foreach ($url in $urls) {
@@ -114,13 +114,13 @@ do {
                         Get-ChildItem -Path "C:\Temp\Dump" | Remove-Item -Recurse -Force | Out-Null
                         Get-ChildItem -Path "C:\Temp\Scripts" -File | Where-Object { $_.Name -ne "Menu.ps1" } | ForEach-Object { Remove-Item -Path $_.FullName -Recurse -Force } | Out-Null
                         $urls = @(
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/PCCheck.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/QuickMFT.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Registry.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/SystemLogs.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/ProcDump.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Localhost.ps1",
-                            "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Viewer.html"
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/PCCheck.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/QuickMFT.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Registry.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/SystemLogs.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/ProcDump.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Localhost.ps1",
+                            "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Viewer.html"
                         )
                         $destinationPath = "C:\Temp\Scripts"
                         foreach ($url in $urls) {
@@ -143,7 +143,7 @@ do {
                         New-Item -Path "C:\Temp\Scripts" -ItemType Directory -Force | Out-Null
                         New-Item -Path "C:\Temp\Dump" -ItemType Directory -Force | Out-Null
                         Set-Location "C:\temp"
-                        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dot-sys/Recording-Check/master/Recording-Check.ps1" -OutFile "C:\Temp\Scripts\Recording-Check.ps1"
+                        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/do1-sys/Recording-Check/master/Recording-Check.ps1" -OutFile "C:\Temp\Scripts\Recording-Check.ps1"
                         Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
                         Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
                         Add-MpPreference -ExclusionPath 'C:\Temp' | Out-Null
@@ -156,7 +156,7 @@ do {
                         Write-Host "`n`nPerforming Advanced Filechecking (BETA)..." -ForegroundColor yellow
                         New-Item -Path "C:\Temp\Scripts" -ItemType Directory -Force | Out-Null
                         Set-Location "C:\temp"
-                        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dot-sys/PCCheckv2/master/Packers.ps1" -OutFile "C:\Temp\Scripts\Packers.ps1"
+                        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/Packers.ps1" -OutFile "C:\Temp\Scripts\Packers.ps1"
                         Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
                         & C:\Temp\Scripts\Packers.ps1
                         return
