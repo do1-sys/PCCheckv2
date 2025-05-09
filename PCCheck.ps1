@@ -14,7 +14,7 @@
 # 27 - November - 2024
 
 $ErrorActionPreference = "SilentlyContinue" 
-$configJson = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/do1-sys/cfg/master/cfg.json" 
+$configJson = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/do1-sys/PCCheckv2/master/cfg.json" 
 $Astra = $configJson.Astra
 $FilesizeH = $configJson.FilesizeH
 $FilesizeL = $configJson.FilesizeL
